@@ -1,12 +1,35 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
-    <html lang="en">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>Industrialist</title>
 	<script src="data.js"></script>
     <script src="control.js"></script>
+	<link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <p id="output"></p>
+    <div class="container">
+		<div class="sidebar">
+			<div class="sidebar-buttons">
+				<button class="sidebar-btn">Add Recipe</button>
+			</div>
+			<div class="sidebar-text">
+				<p>
+					To get started, click Add Recipe.
+				</p>
+				<p id="itemCount"></p>
+				<p id="recipeCount"></p>
+				<p>
+					These are rough amounts,
+					some recipes aren't tracked
+					and some are when they shouldn't be.
+				</p>
+			</div>
+		</div>
+		<div class="main-content">
+			<canvas id="render"></canvas>
+		</div>
+	</div>
 </body>
 </html>
